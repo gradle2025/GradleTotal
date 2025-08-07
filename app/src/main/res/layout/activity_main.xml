@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/bg_gradient"
+      android:padding="32dp"
+      android:paddingTop="32dp"
+
+      android:paddingBottom="0dp"
+      android:orientation="vertical"
+      tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:text="Food and supply"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:layout_marginBottom="10dp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+
+
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/bg_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="Enter a your name"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:id="@+id/et_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="Enter a your aadhaar number"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:id="@+id/et_aadhaar"
+          android:maxLength="12"
+          android:inputType="number"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="Choose Category"
+          android:layout_height="wrap_content" />
+
+      <Spinner
+          android:id="@+id/sp_category"
+          android:layout_width="match_parent"
+
+          android:entries="@array/category_arr"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:layout_marginTop="20dp"
+          android:text="Add"
+          android:id="@+id/btnInsert"
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="Add"
+        android:src="@drawable/ic_launcher_background"
+    app:tint="@android:color/white"
+    app:backgroundTint="#C33764" />
+  </LinearLayout>
+
+</LinearLayout>
