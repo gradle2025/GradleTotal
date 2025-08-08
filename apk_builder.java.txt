@@ -1,0 +1,122 @@
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace Artithmetic
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int n = SumofEven();
+//            OutputMsg("The Sum Of even is:::", n.ToString());
+
+//            //------------------------------------------
+//            Console.WriteLine();
+//            Console.Write("The capital Words are:-");
+//            List<String> dataList = ExtractAllCaptialWord();
+//            PrintList(dataList);
+//            Console.WriteLine();
+//            //------------------------------------------
+//            List<int> datINt = RemoveDuplicateData();
+//            Console.Write("Duplicate Data are :-");
+//            foreach (var data in datINt) {
+//                Console.Write(data +" ");
+//            }
+
+//            Console.WriteLine();
+//            //------------------------------------------
+//            Console.Write("Fibonacii Of a number is:::");
+
+//            for (int i = 0; i < 7; i++) {
+//                Console.Write(fibo(i)+" ");
+//            }
+//            //------------------------------------------
+//            Console.WriteLine();
+
+//            int f = Factorial(7);
+//            Console.WriteLine();
+//            OutputMsg("Factorial Of a number is:::", f.ToString());
+//            //------------------------------------------
+
+
+//            Console.WriteLine("Press Any Key to Exit");
+//            Console.ReadLine();
+           
+
+
+//        }
+
+//        public static void OutputMsg(String msg, String num)
+//        {
+//            Console.Write(msg + num);
+//        }
+
+//        public static void PrintList(List<String> dataList)
+//        {
+//            foreach (var data in dataList)
+//            {
+//                Console.Write(data + " ");
+//            }
+//        }
+
+
+//        private static int SumofEven()
+//        {
+//            int sum = 0;
+//            List<int> arr = new List<int> { 1, 2, 3, 4, 5 };
+//            for (int i = 0; i < arr.Count; i++)
+//            {
+//                if (arr[i] % 2 == 0)
+//                {
+//                    sum = sum + arr[i];
+//                }
+//            }
+//            return sum;
+//        }
+
+//        private static int Factorial(int num)
+//        {
+
+//            if (num <= 1)
+//                return num;
+//            return num * Factorial(num - 1);
+//        }
+
+//        private static int fibo(int num)
+//        {
+
+//            if (num <= 1)
+//                return num;
+//            return fibo(num-1)+fibo(num-2);
+//        }
+
+
+//        private static List<String> ExtractAllCaptialWord()
+//        {
+//            String sentence = "Alice Went To The Market to Buy Oranges and Banana";
+//            List<String> result = new List<string>();
+//            String[] datalist = sentence.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+//            foreach (var data in datalist)
+//            {
+//                if (char.IsUpper(data[0]))
+//                {
+//                    result.Add(data);
+//                }
+//            }
+//            return result;
+
+//        }
+//        private static List<int> RemoveDuplicateData()
+//        {
+//            List<int> dataList = new List<int> { 1, 2, 3, 2, 4, 3, 5, 1 };
+//            return dataList.Distinct().ToList();
+
+//        }
+
+
+//    }
+
+//    }
